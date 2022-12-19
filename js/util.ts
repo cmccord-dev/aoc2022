@@ -21,4 +21,4 @@ export const parseNumsDel = (arr: string, nl?: string): number[] => {
     return parseNumsArr(arr.split(nl ?? '\n'));
 }
 export const parseNumsLines = (arr: string): number[] => parseNumsDel(arr, '\n')
-export { };
+export default { };
