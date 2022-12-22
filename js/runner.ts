@@ -1,7 +1,7 @@
 const lib = require("./lib");
 
 let day =
-  process.argv.length == 2 ? new Date().getDate() : parseInt(process.argv[2]);
+  process.argv.length == 2 ? new Date().getDate() : parseInt(process.argv[2]!);
 (async () => {
   let input = await lib.fetchInput(day);
   let runner = require(`./days/${day}.ts`);
